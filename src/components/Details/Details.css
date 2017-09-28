@@ -1,0 +1,185 @@
+
+.details{
+    width: 100vw;
+    height: 100vh;
+    padding: 0.72rem 0.3466666666666667rem 1.3066666666666666rem 0.3466666666666667rem;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.details_avatar{
+    width: 2.0533333333333332rem;
+    height: 2.0533333333333332rem;
+    float: right;
+    /*background-color: #036eb7;*/
+    border-radius: 50%;
+}
+.details_avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+header{
+    height: 2.3333333333333335rem;
+    padding: 0 0.29333333333333333rem 0 0.4rem;
+}
+header span{
+    line-height: 2.0533333333333332rem;
+    font-size: 24px;
+    font-family: '黑体';
+}
+
+.total{
+    margin-top: 0.4266666666666667rem;
+    height: 0.9333333333333333rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.total .money{
+    height: 100%;
+    width: 3.9466666666666668rem;
+    padding-left: 1.44rem;
+    box-sizing: border-box;
+    background: url(./money.png) no-repeat left center/1.2533333333333334rem 100%;
+}
+
+.total .count{
+    height: 100%;
+    width: 3.9466666666666668rem;
+    padding-left: 1.44rem;
+    box-sizing: border-box;
+    background: url(./count.png) no-repeat left center/1.2533333333333334rem 100%;
+}
+
+.total strong {
+    font-size: 16px;
+    color: #009fe8;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.calendar{
+    margin-top: 0.8rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    color: #595757;
+}
+.calendar h2{
+    text-align: center;
+    height: 1.2533333333333334rem;
+    padding: 0 0.56rem;
+    font-size: 16px;
+    line-height: 1.2266666666666666rem;
+    font-weight: 600; 
+}
+.calendar ul{
+    width: 100%;
+}
+.calendar li{
+    display: inline-block;
+    position: relative;
+    width: 14.285%;
+    height: 1.2533333333333334rem;
+    padding: 7px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.calendar li span{
+    display: inline-block;
+    width: 0.9333333333333333rem;
+    height: 0.9333333333333333rem;
+    line-height: 0.9333333333333333rem;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.calendar .active span{
+    position: relative;
+    color: #32bbe6;
+    
+}
+.calendar .active span:before{
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+    width: 0.4533333333333333rem;
+    height: 1px;
+    background-color: #32bbe6;
+}
+
+.calendar .checkedIn span{
+    background-color: #32bbe6;
+    /*background-color: red;*/
+    color: #fff;
+}
+
+.calendar .fail span{
+    background-color: #D9534F;
+    /*background-color: red;*/
+    /*color: #708090;*/
+}
+
+.calendar ul li.active.checkedIn span::before{
+    background-color: #fff;
+}
+
+.record{
+    width: 100%;
+    margin-top: 0.32rem;
+    border-radius: 8px;
+}
+
+.record>div{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.32rem;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+.record .no{
+    text-align: center;
+    line-height: 2rem;
+    color: #888889;
+}
+.record .yes{
+    padding: 0.4533333333333333rem 0.37333333333333335rem 0.4rem 0.32rem;
+    
+}
+.record .yes .content{
+    height: 100%;
+    border-left: 2px solid #32bbe6;
+    padding-left: 0.29333333333333333rem;
+    color: #595757;
+}
+.record .yes p{
+    display: flex;
+    justify-content: space-between;
+}
+.record .yes .first{
+    font-size: 16px;
+    line-height: 24px;
+}
+.record .yes .second{
+    font-size: 14px;
+    line-height: 20px;
+    color: #888889;
+}
+
+.record .first span:last-of-type{
+    color: #32bbe6;
+}
+
+/* 日期下方的勋章 */
+.icon::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;;
+    left: 10%;
+    width: 1.0666666666666667rem;
+    height: 0.4rem;
+    background: url('./medal.png') no-repeat bottom center/1.0666666666666667rem 0.4rem;
+    z-index: 999;
+}
